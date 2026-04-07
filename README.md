@@ -7,10 +7,8 @@ Free token distribution with a Soroban-enforced 24-hour cooldown. The admin depl
 | | |
 |---|---|
 | **Frontend** | `https://tokenfaucet.vercel.app` |
-| **GitHub** | `https://github.com/YOUR_USERNAME/tokenfaucet` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CONTRACT_ID` |
-| **Token** | `https://stellar.expert/explorer/testnet/contract/TOKEN_ID` |
-| **Proof TX** | `https://stellar.expert/explorer/testnet/tx/TX_HASH` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CD42T52V7UI2WZOGIH4LHNTX3YA642RJU4E43IXQYNH2UUAQ6SC2JZ2X` |
+| **Token** | `https://stellar.expert/explorer/testnet/contract/CD42T52V7UI2WZOGIH4LHNTX3YA642RJU4E43IXQYNH2UUAQ6SC2JZ2X` |
 
 ## How It Works
 
