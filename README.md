@@ -7,7 +7,7 @@ Free token distribution with a Soroban-enforced 24-hour cooldown. The admin depl
 | | |
 |---|---|
 | **Frontend** | `https://tokenfaucet.vercel.app` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CD42T52V7UI2WZOGIH4LHNTX3YA642RJU4E43IXQYNH2UUAQ6SC2JZ2X` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CCD2K3I3NSQ25QRFXISDEWAIQM4LJUIRQXAFFVSMJWATRI7T6KCPCUJ2` |
 | **Token** | `https://stellar.expert/explorer/testnet/contract/CD42T52V7UI2WZOGIH4LHNTX3YA642RJU4E43IXQYNH2UUAQ6SC2JZ2X` |
 
 ## How It Works
@@ -19,6 +19,16 @@ Free token distribution with a Soroban-enforced 24-hour cooldown. The admin depl
 5. `cooldown_remaining()` returns ledgers until next claim
 6. Attempting `claim()` before cooldown errors on-chain
 
+## Why This Project Matters
+
+This project turns a familiar real-world workflow into a verifiable on-chain primitive on Stellar: transparent state transitions, user-authenticated actions, and deterministic outcomes.
+
+## Architecture
+
+- **Smart Contract Layer**: Soroban contract enforces business rules, authorization, and state transitions.
+- **Client Layer**: React + Vite frontend handles wallet UX, transaction composition, and real-time status views.
+- **Wallet/Auth Layer**: Freighter signs every state-changing action so operations are attributable and non-repudiable.
+- **Infra Layer**: Stellar Testnet + Soroban RPC for execution; Vercel for frontend hosting.
 ## Contract Functions
 
 ```rust
@@ -48,3 +58,5 @@ faucet_balance() -> i128
 chmod +x scripts/deploy.sh && ./scripts/deploy.sh
 cd frontend && npm install && npm run dev
 ```
+
+
